@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opiniones y Sugerencias | Dragón Dorado</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand">🏮 Dragón Dorado</a>
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="nav-links">🥢 Carta / Menú</button>
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Menú y Platillos</a></li>
+          <li><a href="contacto.html" class="active">Opiniones y Sugerencias</a></li>
+          <li><a href="productos.html#panel-pedido" class="nav-badge">❤️ <span id="contador-favoritos">0</span> | 🥡 <span id="contador-carrito">0</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section container">
+    <h1 class="section-title">Buzón de Opiniones y Sugerencias</h1>
+    <p class="section-subtitle">Tu opinión nos ayuda a mejorar cada día en Dragón Dorado.</p>
+
+    <div class="contact-layout">
+      <form id="form-contacto" class="contact-form" novalidate>
+        <div class="form-group">
+          <label for="nombre">Nombre completo *</label>
+          <input type="text" id="nombre" placeholder="Ej. Diego Mendoza">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo electrónico *</label>
+          <input type="email" id="email" placeholder="Ej. cliente@correo.com">
+        </div>
+
+        <div class="form-group">
+          <label for="telefono">Teléfono (10 dígitos, opcional)</label>
+          <input type="tel" id="telefono" placeholder="Ej. 4779876543" maxlength="10">
+        </div>
+
+        <div class="form-group">
+          <label for="calificacion">Calificación de tu visita *</label>
+          <select id="calificacion">
+            <option value="">-- Selecciona una calificación --</option>
+            <option value="5">⭐⭐⭐⭐⭐ Excelente (5/5)</option>
+            <option value="4">⭐⭐⭐⭐ Muy Bueno (4/5)</option>
+            <option value="3">⭐⭐⭐ Regular (3/5)</option>
+            <option value="2">⭐⭐ Necesita mejorar (2/5)</option>
+            <option value="1">⭐ Deficiente (1/5)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Tu opinión o sugerencia *</label>
+          <textarea id="mensaje" rows="4" placeholder="Cuéntanos qué platillo probaste o cómo podemos mejorar..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Enviar Opinión</button>
+        <div id="form-alerta" class="form-alert"></div>
+      </form>
+
+      <aside class="contact-info-card">
+        <h2>Atención al Cliente</h2>
+        <p>En <strong>Dragón Dorado</strong> leemos cada comentario para mantener la calidad de nuestra cocina.</p>
+        <ul class="contact-details">
+          <li><strong>📍 Dirección:</strong> Av. Jardines del Moral #890, León, Gto.</li>
+          <li><strong>📞 Teléfono:</strong> (477) 987-6543</li>
+          <li><strong>✉️ Correo:</strong> contacto@dragondorado.mx</li>
+          <li><strong>🕒 Horario:</strong> Lunes a Domingo, 1:00 PM – 10:30 PM</li>
+        </ul>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Restaurante Chino "Dragón Dorado" • Proyecto Integrador Web (5° Semestre)</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>s

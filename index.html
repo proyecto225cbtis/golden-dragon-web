@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golden Dragon| Restaurante Chino</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand">🏮 Dragón Dorado</a>
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="nav-links">🥢 Carta / Menú</button>
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="productos.html">Menú y Platillos</a></li>
+          <li><a href="contacto.html">Opiniones y Sugerencias</a></li>
+          <li><a href="productos.html#panel-pedido" class="nav-badge">❤️ <span id="contador-favoritos">0</span> | 🥡 <span id="contador-carrito">0</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <span class="hero-tag">Cocina Cantonesa • Sabor al Wok</span>
+        <h1>Bienvenidos a Dragón Dorado</h1>
+        <p>Especialidades orientales preparadas al momento con ingredientes frescos, salsas artesanales y recetas tradicionales.</p>
+        <div class="hero-actions">
+          <a href="productos.html" class="btn btn-primary">Ver Menú Completo</a>
+          <a href="contacto.html" class="btn btn-secondary">Enviar Opinión</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <h2 class="section-title">Especialidades de la Casa</h2>
+      <p class="section-subtitle">Guarda tus favoritos o agrega platillos directo a tu pedido.</p>
+
+      <div class="grid-cards">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=800&q=80" alt="Pollo Kung Pao">
+          <div class="card-body">
+            <span class="badge-cat">Especialidades</span>
+            <h3>Pollo Kung Pao</h3>
+            <p class="ingredients">Cubos de pollo salteados al wok con cacahuate tostado, chile seco, pimiento, ajo y salsa ligeramente picante.</p>
+            <div class="card-footer">
+              <span class="price">$140 MXN</span>
+              <div class="card-actions">
+                <button type="button" class="btn-icon btn-favorito" data-nombre="Pollo Kung Pao" title="Guardar en favoritos">❤️</button>
+                <button type="button" class="btn btn-primary btn-sm btn-carrito" data-nombre="Pollo Kung Pao" data-precio="140">Agregar</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80" alt="Arroz Cantonés">
+          <div class="card-body">
+            <span class="badge-cat">Arroces y Tallarines</span>
+            <h3>Arroz Cantonés</h3>
+            <p class="ingredients">Arroz salteado al wok con camarón, cerdo asado, huevo, cebollín, zanahoria y toque de aceite de ajonjolí.</p>
+            <div class="card-footer">
+              <span class="price">$120 MXN</span>
+              <div class="card-actions">
+                <button type="button" class="btn-icon btn-favorito" data-nombre="Arroz Cantonés" title="Guardar en favoritos">❤️</button>
+                <button type="button" class="btn btn-primary btn-sm btn-carrito" data-nombre="Arroz Cantonés" data-precio="120">Agregar</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=800&q=80" alt="Wantones Fritos">
+          <div class="card-body">
+            <span class="badge-cat">Entradas</span>
+            <h3>Wantones Fritos (6 pzas)</h3>
+            <p class="ingredients">Crujientes wantones dorados rellenos de carne sazonada y cebollín, servidos con salsa de ciruela y agridulce.</p>
+            <div class="card-footer">
+              <span class="price">$90 MXN</span>
+              <div class="card-actions">
+                <button type="button" class="btn-icon btn-favorito" data-nombre="Wantones Fritos (6 pzas)" title="Guardar en favoritos">❤️</button>
+                <button type="button" class="btn btn-primary btn-sm btn-carrito" data-nombre="Wantones Fritos (6 pzas)" data-precio="90">Agregar</button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="info-strip">
+      <div class="container info-grid">
+        <div>
+          <h3>📍 Ubicación</h3>
+          <p>Av. Jardines del Moral #890, León, Guanajuato.</p>
+        </div>
+        <div>
+          <h3>🕒 Horario</h3>
+          <p>Lunes a Domingo de 1:00 PM a 10:30 PM.</p>
+        </div>
+        <div>
+          <h3>📞 Pedidos Directos</h3>
+          <p>Tel: 477-987-6543 • Comedor, para llevar y entrega.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Restaurante Chino "Dragón Dorado" • Proyecto Integrador Web (5° Semestre)</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

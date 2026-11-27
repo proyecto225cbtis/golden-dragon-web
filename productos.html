@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú y Platillos | Dragón Dorado</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand">🏮 Dragón Dorado</a>
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="nav-links">🥢 Carta / Menú</button>
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html" class="active">Menú y Platillos</a></li>
+          <li><a href="contacto.html">Opiniones y Sugerencias</a></li>
+          <li><a href="#panel-pedido" class="nav-badge">❤️ <span id="contador-favoritos">0</span> | 🥡 <span id="contador-carrito">0</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section container">
+    <h1 class="section-title">Carta de Platillos</h1>
+    <p class="section-subtitle">Filtra por categoría, guarda tus favoritos o confirma tu pedido con envío al correo.</p>
+
+    <div class="filter-bar">
+      <button type="button" class="filter-btn active" data-filter="todos">Todos</button>
+      <button type="button" class="filter-btn" data-filter="entradas">Entradas</button>
+      <button type="button" class="filter-btn" data-filter="arroces">Arroces y Tallarines</button>
+      <button type="button" class="filter-btn" data-filter="especialidades">Especialidades</button>
+      <button type="button" class="filter-btn" data-filter="bebidas">Bebidas y Postres</button>
+    </div>
+
+    <div class="grid-cards" id="catalogo-platillos">
+      <article class="card" data-category="entradas">
+        <img src="https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=800&q=80" alt="Wantones Fritos">
+        <div class="card-body">
+          <span class="badge-cat">Entradas</span>
+          <h3>Wantones Fritos (6 pzas)</h3>
+          <p class="ingredients"><strong>Ingredientes:</strong> Masa crujiente frita, relleno de cerdo y cebollín, salsa agridulce y salsa de ciruela.</p>
+          <div class="card-footer">
+            <span class="price">$90 MXN</span>
+            <div class="card-actions">
+              <button type="button" class="btn-icon btn-favorito" data-nombre="Wantones Fritos (6 pzas)">❤️</button>
+              <button type="button" class="btn btn-primary btn-sm btn-carrito" data-nombre="Wantones Fritos (6 pzas)" data-precio="90">Agregar</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="entradas">
+        <img src="https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=800&q=80" alt="Gyozas a la Plancha">
+        <div class="card-body">
+          <span class="badge-cat">Entradas</span>
+          <h3>Gyozas a la Plancha (5 pzas)</h3>
+          <p class="ingredients"><strong>Ingredientes:</strong> Empanadillas doradas en plancha con col, jengibre, ajo, cerdo y dip de soya con vinagre.</p>
+          <div class="card-footer">
+            <span class="price">$110 MXN</span>
+            <div class="card-actions">
+              <button type="button" class="btn-icon btn-favorito" data-nombre="Gyozas a la Plancha (5 pzas)">❤️</button>
+              <button type="button" class="btn btn-primary btn-sm btn-carrito" data-nombre="Gyozas a la Plancha (5 pzas)" data-precio="110">Agregar</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="arroces">
+        <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80" alt="Arroz Cantonés">
+        <div class="card-body">
+          <span class="badge-cat">Arroces y Tallarines</span>
+          <h3>Arroz Cantonés</h3>
+          <p class="ingredients"><strong>Ingredientes:</strong> Arroz al wok, camarón, cerdo asado, huevo, zanahoria, chícharos y salsa de soya.</p>
+          <div class="card-footer">
+            <span class="price">$120 MXN</span>
+            <div class="card-actions">
+              <button type="button" class="btn-icon btn-favorito" data-nombre="Arroz Cantonés">❤️</button>
+              <button type="button" class="btn btn-primary btn-sm btn-carrito" data-nombre="Arroz Cantonés" data-precio="120">Agregar</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="arroces">
+        <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=80" alt="Fideos Lo Mein de Pollo">
+        <div class="card-body">
+          <span class="badge-cat">Arroces y Tallarines</span>
+          <h3>Fideos Lo Mein de Pollo</h3>
+          <p class="ingredients"><strong>Ingredientes:</strong> Tallarines suaves salteados con pechuga de pollo, champiñones, germen de soya y cebollín.</p>
+          <div class="card-footer">
+            <span class="price">$125 MXN</span>
+            <div class="card-actions">
+              <button type="button" class="btn-icon btn-favorito" data-nombre="Fideos Lo Mein de Pollo">❤️</button>
+              <button type="button" class="btn btn-primary btn-sm btn-carrito" data-nombre="Fideos Lo Mein de Pollo" data-precio="125">Agregar</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="especialidades">
+        <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=800&q=80" alt="Pollo Kung Pao">
+        <div class="card-body">
+          <span class="badge-cat">Especialidades</span>
+          <h3>Pollo Kung Pao</h3>
+          <p class="ingredients"><strong>Ingredientes:</strong> Cubos de pollo al wok, cacahuate tostado, chile árbol, pimiento rojo y salsa kung pao.</p>
+          <div class="card-footer">
+            <span class="price">$140 MXN</span>
+            <div class="card-actions">
+              <button type="button" class="btn-icon btn-favorito" data-nombre="Pollo Kung Pao">❤️</button>
+              <button type="button" class="btn btn-primary btn-sm btn-carrito" data-nombre="Pollo Kung Pao" data-precio="140">Agregar</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="bebidas">
+        <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=800&q=80" alt="Té Verde Frío con Mango">
+        <div class="card-body">
+          <span class="badge-cat">Bebidas y Postres</span>
+          <h3>Té Verde Frío con Mango</h3>
+          <p class="ingredients"><strong>Ingredientes:</strong> Té verde oriental infusionado en frío, néctar de mango natural y perlas frutales.</p>
+          <div class="card-footer">
+            <span class="price">$60 MXN</span>
+            <div class="card-actions">
+              <button type="button" class="btn-icon btn-favorito" data-nombre="Té Verde Frío con Mango">❤️</button>
+              <button type="button" class="btn btn-primary btn-sm btn-carrito" data-nombre="Té Verde Frío con Mango" data-precio="60">Agregar</button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <section id="panel-pedido" class="summary-panels">
+      <div class="panel-box">
+        <h2>❤️ Mis Platillos Favoritos</h2>
+        <ul id="lista-favoritos" class="item-list">
+          <li class="empty-msg">Aún no has guardado platillos favoritos.</li>
+        </ul>
+      </div>
+
+      <div class="panel-box">
+        <h2>🥡 Tu Pedido Actual</h2>
+        <ul id="lista-carrito" class="item-list">
+          <li class="empty-msg">Tu carrito está vacío.</li>
+        </ul>
+
+        <div class="cart-total-row">
+          <strong>Total estimado: <span id="total-carrito">$0 MXN</span></strong>
+          <button type="button" id="btn-vaciar-carrito" class="btn btn-secondary btn-sm">Vaciar</button>
+        </div>
+
+        <form id="form-confirmar-pedido" class="confirm-order-box" novalidate>
+          <h3>Confirmar Pedido y Enviar al Correo</h3>
+          <div class="form-group">
+            <label for="pedido-nombre">Tu nombre *</label>
+            <input type="text" id="pedido-nombre" placeholder="Ej. Mariana Ruiz">
+          </div>
+          <div class="form-group">
+            <label for="pedido-correo">Correo electrónico para confirmación *</label>
+            <input type="email" id="pedido-correo" placeholder="Ej. mariana@correo.com">
+          </div>
+          <button type="submit" id="btn-confirmar-pedido" class="btn btn-primary btn-block">Confirmar Pedido</button>
+          <div id="pedido-alerta" class="form-alert"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Restaurante Chino "Dragón Dorado" • Proyecto Integrador Web (5° Semestre)</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
